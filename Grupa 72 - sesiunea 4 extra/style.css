@@ -1,0 +1,27 @@
+body {
+    background-color: aqua;
+}
+
+
+.pinkDiv {
+    background-color: pink;
+}
+
+#orangeDiv {
+    background-color: orange;
+    border-style: dashed;
+}
+
+p {
+    font-style: italic;
+    font-size: 25px;
+}
+
+h1, h2 {
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+}
+
+#imgDiv {
+    background-image: url("courses.jpg");
+}

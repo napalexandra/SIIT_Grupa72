@@ -1,0 +1,28 @@
+CRUD
+C- CREATE -> cream resurse noi -> ex. adaug un produs in cosul de cumparaturi, sign in(register) -> se creaza un utilizator nou 
+	POST method
+R - READ -> citim / aducem date de pe server -> ex. vreau sa vad produsele dintr-o categorie, vreau sa vad cosul de cumparaturi
+	GET method
+U - UPDATE -> modificam date -> ex. actualizam adresa, nr tel, cand modificam cantitatea unui produs din cosul de cumparaturi, schimbam parola
+	PUT method 
+D - DELETE -> stergem date - > ex. stergem un produs din cosul de cumparaturi, stergem contul creat, stergem cardul salvat pentru plati
+	DELETE method
+
+
+vreau o aplicatie sa vindem Ceasuri 
+-> web 
+-> google play 
+-> app store 
+
+
+1. 1 developer Frontend -> web 
+2. 1 developer Android -> google play
+3. 1 developer Ios -> app store
+4. 1 dev web api -> 
+
+
+
+<p> Acesta e un paragraf. </p>
+<img src="imagine.jpg"/>
+
+<a href="https://scoalainformala.ro/">dute la scoala informala</a>
