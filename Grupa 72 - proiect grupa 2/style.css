@@ -40,7 +40,7 @@ img
 
 .image
 {
-    float:left;
+    float:left;  position: relative;
     margin-left:50px;
     background-color:rgb(250, 250, 250);
     
@@ -48,4 +48,12 @@ img
 
 a:visited {
     color: rgb(0, 61, 0);
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
 }
