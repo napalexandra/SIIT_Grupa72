@@ -1,0 +1,21 @@
+Data types 
+
+numbers : numere: 3, 5.5, 109, 45.99, 
+          integers: 3, 109, 6
+	    floats: 5.5, 45.99
+string : textele
+	 char: caracter: 'a', 'b', '6', 'g', 'G'
+	 string: siruri de caracte: 'ale', 'intro72'
+boolean: true si false / 1 si 0
+
+
+'6' == 6 false
+88 == '88' false
+'55.67' == 55.67 false 
+89.99 == 89.99 true
+
+
+Pentru cei care vor sa exerseze acasa:
+1. Rezultatul intr-un div in loc de popup 
+2. 2 inputuri cu nume si prenume si sa scrieti intr-un div "Bine ai venit Nume si Prenume"
+3. Fieldset cu 3 numere si verific care e cel mai mare numar: if(a>b) sau var x = Math.max(a,b,c);
