@@ -1,0 +1,62 @@
+Structuri conditionale 
+  -> verificam daca e respectata o conditie 
+  -> daca exista o valoare si daca acea valoare este diferita 0
+  -> if(b==0)   { 
+            alert("impartirea la 0 nu este posibila. Scrie un numar diferit de 0.");     	
+      }
+...
+....
+
+!= not equal (diferit)
+== equal 
+= asignare de valoare la o variabila 
+
+
+Create an html page, add 3 text boxes in which the user will input 3 numbers :a,b,c
+Add a button that, on click, will calculate the maximum number of the three. The result will be displayed in an alert. The program should not crash if the user does not input one or two numbers. 
+Cases: 
+-If no number is introduced then a message should be displayed asking the user to input at least on number.  DONE
+-If only one number of the three is introduced, that number is the maximum number. DONE
+-If two numbers are introduced then it should be displayed the maximum of the two. DONE
+-If three numbers are introduced then it should be displayed the maximum of the three.DONE
+
+AND a && b && c
+
+OR ||
+
+
+cnp: 2850607060012   cnp-ul trebuie sa aiba fix 13 cifre 
+     01234567
+zi = cnp[5] +cnp[6];
+luna =cnp[3] + cnp[4];  
+an= cnp[1] + cnp[2];
+zi:  7  ziua >= 1 && ziua <= 31
+luna: 6  luna >=1 && luna <=12
+an: 85 an<=2023
+
+isNaN(zi) -> returneaza true sau false 
+zi="12";
+zi.length = 2;
+nume = "alexandra";
+	  012345678
+nume[pozitia]
+nume[0] = "a";
+nume[4] = "a"
+nume[7] = "r"
+
+nume.length = 9;
+denumire = "grupa 72";
+denumire.length = 8;
+
+siruri de caractere (arrays) 
+- dimensiune: length
+- array-urile / sirurile atribuie fiecarui caracter cate o pozitie 
+
+
+
+
+
+
+
+
+
