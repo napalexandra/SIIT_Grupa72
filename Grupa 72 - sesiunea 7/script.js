@@ -74,4 +74,22 @@ function valideazaCNP() {
     {
         alert("Nu te poti naste in viitor!");
     }
+
+    if((cnp[3] + cnp[4]) != luna) 
+    {
+        alert("Luna nasterii nu coincide cu cea din CNP!");
+    }
+
+    if((cnp[5] + cnp[6]) != zi)
+    {
+        alert("Ziua nasterii nu coincide cu cea din CNP!");
+    }
+
+    if((cnp[1] + cnp[2]) != (an[2] + an[3]))
+    {
+        alert("Anul nasterii nu coincide cu cel din CNP!");
+    }
+    else {
+        alert("BRAVO CNP-ul introdus este corect si coincide cu data nasterii!");
+    }
 }

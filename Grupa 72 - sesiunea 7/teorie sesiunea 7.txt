@@ -33,6 +33,7 @@ an= cnp[1] + cnp[2];
 zi:  7  ziua >= 1 && ziua <= 31
 luna: 6  luna >=1 && luna <=12
 an: 85 an<=2023
+           0123
 
 isNaN(zi) -> returneaza true sau false 
 zi="12";

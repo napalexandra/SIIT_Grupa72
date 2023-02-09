@@ -1,0 +1,133 @@
+if(conditie) 
+   {  
+
+   }
+else {
+
+}
+
+if(p1>p2) 
+ {
+    alert (p1 + "Este pretul mai mare"); 
+ }
+else if(p1 ==p2) 
+ {
+    alert("Cele doua preturi sunt la fel");
+ }
+else
+ {
+    alert(p2 + "Este pretul mai mare);
+ }
+
+
+
+swap algorithm -> algoritmul interschimbarii valorilor. 
+nr1 = 50;   nr1=nr2=30;
+nr2= 30;     nr2= nr1 = 30; 
+temp = 0;
+
+temp = nr1;       temp = 50;
+nr1 = nr2;        nr1 = 30;
+nr2 = temp;       nr2 = 50;
+
+
+
+nr1 = 30;
+nr2 = 50;
+
+
+
+
+IF - structura conditionala (SWITCH) 
+
+Structuri repetitive: while, do while, for
+
+while(conditie) {
+   proces;
+}
+
+n = 5;   sum = 1+  2+    3+      4     +    5      = 15;
+               1 (1+1)  (2+1)  (3+1)      (4+1)
+n=10;    sum = 1+2+3+4+5+6+7+8+9+10;
+
+n = citesc(document.getElementById); 
+sum = 0; 
+i = 1; 
+
+while(i<=n) 
+ {
+   sum = sum + i; 
+   i = i+1;
+ }
+
+alert(sum);
+
+n = 4; 
+Step1: n =4;
+       sum = 0;
+       i = 1;
+Step2: i<=n;
+       1<=4; Adevarat
+       sum = sum + i = 0 +1 = 1; 
+       i = i + 1 = 1 + 1 = 2;
+Step 3: i<=n
+        2<=4 Adevarat
+	  sum = sum + i = 1 + 2 = 3;
+        i = i + 1 = 2+ 1 = 3; 
+Step 4: i<=n 
+	  3 <=4 Adevarat
+	  sum = sum + i = 3 + 3 = 6;
+        i = i + 1 = 3 + 1 = 4; 
+Step 5: i<=n 
+        4<=4 Adevarat 
+	  sum = sum + i = 6 + 4 = 10;
+        i = i + 1 = 4 + 1 = 5;
+Step 6: i<=n 
+        5<=4 False
+        alert 10
+
+
+
+n = 4 ; 
+prod = 1 * 2 * 3 * 4 = 24;
+produs = 1; 
+while ( i<=n) 
+{ 
+   produs = produs * i; 
+   i = i + 1; 
+}
+alert(produs); 
+
+Step1: n = 4 ; produs = 1; i = 1;
+Step2: i<=n 
+       1<=4 True 
+       produs = produs * i = 1 * 1 = 1;
+       i = i + 1 = 1 + 1 = 2;
+Step3: 2<=4 True 
+       produs = produs * i = 1 * 2 = 2; 
+       i = i + 1 = 2 + 1 = 3;
+Step 4: 3<=4 True 
+        produs = produs * i = 2 * 3 = 6; 
+        i = i + 1 = 3+1=4;
+Step 5: 4<=4 True 
+        produs = produs * i = 6 * 4 = 24; 
+        i = i + 1 = 4+1 = 5; 
+Step 6: 5<=4 False 
+        alert -> 24
+
+
+n1 = 6; 
+n2 = 10; 
+sum = 6 + 7 + 8 + 9 + 10;
+
+
+i = n1; 
+while (i <= n2) 
+{
+   sum = sum + i; 
+   i = i + 1;
+}
+
+
+
+
