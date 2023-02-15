@@ -66,13 +66,17 @@ function fibo()
     var n1 = 0; 
     var n2 = 1;
     var next;
-    var sir = n1 + " , " + n2 + " , ";
     var i = 3; 
     if(isNaN(n) || n==0)
     {
      alert("Puteti introduce doar numere mai mari decat 0!!!!");
     }
+    else if(n==1) 
+    {
+     alert("0");
+    }
     else {
+     var sir = n1 + " , " + n2 + " , ";
       while(i <= n)
          {
             next = n1 + n2;  
