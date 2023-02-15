@@ -37,7 +37,7 @@ function sum() {
 
     while(i <= parseInt(nr)) 
     {
-        sum = sum + i;
+            sum = sum + i;
         i = i + 1;
     }
 
