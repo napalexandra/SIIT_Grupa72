@@ -1,0 +1,99 @@
+Magazin online: 
+- produse 
+     - numele produsului varchar(100) Iphone 13 
+     - id brand                       1
+     - descriere produs
+     - sku
+     - cantitatea in stoc 
+     - pret -> pret + 0.15*pret decimal(4,2)   12.33 12.2 1000.55 5005 5005.8 
+     - data adaugarii 
+     - data modificari 
+- branduri 
+   - id brand    1
+   - nume brand  Apple 
+- furnizori
+      - numele furnizorului 
+      - telefon
+      - mail 
+      - locatie 
+      - termen de livrare 
+- utilizatori 
+      - nume 
+      - prenume 
+      - mail 
+      - username
+      - telefon 
+      - strada 
+      - nr 
+      - localitate 
+      - judet 
+CRUD  - DML 
+C - INSERT 
+R - SELECT 
+U - UPDATE 
+D - DELETE 
+
+CRUD - DDL 
+C - CREATE TABLE 
+R - nu avem nimic 
+U - ALTER TABLE 
+D - DROP TABLE 
+
+
+
+Creare tabel: 
+CREATE TABLE Produse(ProductID INTEGER PRIMARY KEY AUTOINCREMENT, 
+                     NumeProdus VARCHAR(50), 
+                     Descriere VARCHAR(1000), 
+                     Pret decimal(4,2), 
+                     DataAdaugare TIMESTAMP DEFAULT CURRENT_TIMESTAMP)
+
+CREATE TABLE Furnizori (FurnizorID INTEGER PRIMARY KEY AUTOINCREMENT, 
+                       NumeFurnizor varchar(50)) 
+
+
+INSERARE DATE: 
+1 inregistrare: 
+INSERT INTO Produse(NumeProdus, Descriere, Pret) 
+         VALUES ('Samsung S23' , 'Smartphone last generation', 4567.99) 
+
+mai multe inregistrari: 
+INSERT INTO Produse(NumeProdus, Descriere, Pret) 
+         VALUES ('Iphone 13' , 'Smartphone last generation', 5000.99), 
+                ('Sony X', 'Smartphone last gen', 2000.78), 
+                ('Samsung S22', 'Smartphone', 3000.65)
+
+INSERT INTO Furnizori(NumeFurnizor) 
+            VALUES ('Apple'),
+                   ('Samsung')
+
+Adaugare coloana 
+ALTER TABLE Produse 
+ADD FurnizorID integer
+
+CITIRE DATE: 
+CITIRE Anumite coloane: SELECT NumeProdus, Pret FROM Produse 
+Citire clauza where 
+SELECT NumeProdus, Pret FROM Produse WHERE Pret<3500
+SELECT NumeProdus, Pret FROM Produse WHERE Pret>2000 AND Pret<5000
+SELECT NumeProdus, Pret FROM Produse WHERE NumeProdus = 'Samsung S23'
+SELECT NumeProdus, Pret FROM Produse WHERE NumeProdus LIKE '%Samsung%'
+SELECT NumeProdus, Descriere, Pret FROM Produse WHERE Descriere LIKE '%Generation%'
+SELECT Max(Pret) AS 'Produs cu pret maxim', NumeProdus  FROM Produse
+SELECT *FROM Produse ORDER BY Pret
+SELECT *FROM Produse ORDER BY Pret DESC
+
+SELECT NumeProdus, Pret, NumeFurnizor 
+FROM Produse 
+INNER JOIN Furnizori ON Produse.FurnizorID = Furnizori.FurnizorID
+
+
+DELETE 
+DELETE FROM Produse WHERE ProductID =3
+
+UPDATE 
+UPDATE PRODUSE SET DESCRIERE = 'Samsung S22 este un telefon de ultima generatie'  WHERE ProductID=4
+UPDATE PRODUSE SET Pret = Pret + 0.15*Pret 
+UPDATE Produse SET FurnizorID = 1 WHERE ProductId = 2
+UPDATE Produse SET FurnizorID = 2 WHERE ProductId = 1
+UPDATE Produse SET FurnizorID = 2 WHERE ProductId = 4
